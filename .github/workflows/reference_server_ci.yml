@@ -59,12 +59,8 @@ jobs:
                                                   \"requested_scopes\": \"system/*.read\", \
                                                   \"client_id\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJlZ2lzdHJhdGlvbi10b2tlbiJ9.eyJqd2tzX3VybCI6Imh0dHA6Ly8xMC4xNS4yNTIuNzMvaW5mZXJuby8ud2VsbC1rbm93bi9qd2tzLmpzb24iLCJhY2Nlc3NUb2tlbnNFeHBpcmVJbiI6MTUsImlhdCI6MTU5NzQxMzE5NX0.q4v4Msc74kN506KTZ0q_minyapJw0gwlT6M_uiL73S4\" \
                                                }" \
-                                               "bulk_server_url:$SERVER_URL" \
-                                               "bulk_token_endpoint:http://localhost:8080/reference-server/oauth/token" \
-                                               "bulk_client_id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJlZ2lzdHJhdGlvbi10b2tlbiJ9.eyJqd2tzX3VybCI6Imh0dHA6Ly8xMC4xNS4yNTIuNzMvaW5mZXJuby8ud2VsbC1rbm93bi9qd2tzLmpzb24iLCJhY2Nlc3NUb2tlbnNFeHBpcmVJbiI6MTUsImlhdCI6MTU5NzQxMzE5NX0.q4v4Msc74kN506KTZ0q_minyapJw0gwlT6M_uiL73S4" \
-                                               "bulk_scope:system/*.read" \
-                                               bulk_encryption_method:ES384 \
-                                               group_id:1a bulk_timeout:180 \
+                                               group_id:1a \
+                                               bulk_timeout:180 \
                                                bulk_patient_ids_in_group:85,355
 
       - name: Run g10 test kit Single Patient API and Multi-Patient API with US Core 6.1.0 and Bulk Data 2.0.0
@@ -86,11 +82,6 @@ jobs:
                                                   \"requested_scopes\": \"system/*.read\", \
                                                   \"client_id\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJlZ2lzdHJhdGlvbi10b2tlbiJ9.eyJqd2tzX3VybCI6Imh0dHA6Ly8xMC4xNS4yNTIuNzMvaW5mZXJuby8ud2VsbC1rbm93bi9qd2tzLmpzb24iLCJhY2Nlc3NUb2tlbnNFeHBpcmVJbiI6MTUsImlhdCI6MTU5NzQxMzE5NX0.q4v4Msc74kN506KTZ0q_minyapJw0gwlT6M_uiL73S4\" \
                                                }" \
-                                               "bulk_server_url:$SERVER_URL" \
-                                               "bulk_token_endpoint:http://localhost:8080/reference-server/oauth/token" \
-                                                "bulk_client_id:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJlZ2lzdHJhdGlvbi10b2tlbiJ9.eyJqd2tzX3VybCI6Imh0dHA6Ly8xMC4xNS4yNTIuNzMvaW5mZXJuby8ud2VsbC1rbm93bi9qd2tzLmpzb24iLCJhY2Nlc3NUb2tlbnNFeHBpcmVJbiI6MTUsImlhdCI6MTU5NzQxMzE5NX0.q4v4Msc74kN506KTZ0q_minyapJw0gwlT6M_uiL73S4" \
-                                               "bulk_scope:system/*.read" \
-                                               bulk_encryption_method:ES384 \
                                                group_id:1a \
                                                bulk_timeout:180 \
                                                bulk_patient_ids_in_group:85,355 \
